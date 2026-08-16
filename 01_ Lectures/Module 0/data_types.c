@@ -1,5 +1,5 @@
 /* =====================================================================
- *  DATA TYPES
+ *  Part1- DATA TYPES
  * =====================================================================
  * C has a small set of basic (primitive) data types. Each one reserves
  * a specific amount of memory and interprets the bits it holds
