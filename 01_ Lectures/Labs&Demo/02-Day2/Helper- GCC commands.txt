@@ -1,0 +1,32 @@
+gcc program.c -o program   <-- -o program: Specifies the name of the output executable. If omitted, the default is a.out
+
+
+
+gcc -E program.c -o program.i  <-- -E: Stop after the preprocessing stage
+				<-- -o program.i: Save the preprocessed output to a file
+
+
+gcc -S program.i -o program.s   <-- -S: Stop after compilation; do not assemble.
+
+				<-- -S: Stop after compilation; do not assemble.
+
+
+gcc -c program.s -o program.o    <-- -c: Compile and assemble, but do not link.
+
+				 <-- Result-- <--  An object file program.o.
+
+
+
+gcc -fstack-protector-strong program.c -o program <-- Protects functions that use alloca or have buffers larger than 8 bytes.
+
+
+
+
+
+gcc -Wall -Wextra -O2 -fstack-protector-strong program.c -o program    <-- For a basic level of protection with minimal performance impact.
+
+								<-- Protects functions that use alloca or have buffers larger than 8 bytes
+
+
+
+gcc -Wall -Wextra -O2 -fstack-protector-strong program.c -o program    <-- used for combination with other security and warning flags
